@@ -112,17 +112,17 @@ section{
 }
 
 .header .navbar a{
-    font-size: 1.7rem;
+    font-size: 4rem;
     margin: 0 1rem;
     color: #222;
 }
 
 .header .navbar a.active{
-    color: white;
+    color: rgba(199, 127, 46, 0.968);
 }
 
 .header .navbar a:hover{
-    color: white;
+    color: rgba(199, 127, 46, 0.968);
 }
 
 .header .icons div{
@@ -315,42 +315,7 @@ section{
 
 /* index */
 
-.index{
-    background: url("images/home1-bg.jpg") no-repeat;
-    background-size: contain;
-    background-position: center right;
-    min-height: 95vh;
-    display: flex;
-    align-items: center;
-}
 
-.index .content{
-    position: absolute;
-    left: 0;
-    top: -10;
-    padding: 10px;
-    width: calc(100% - 25rem); /* Adjust this width as needed */
-    text-align: left; /* Align the text to the right */
-}
-
-.index .content h3{
-    font-size: 4rem;
-    color: black;
-    font-family: 'Merienda One', cursive;
-}
-
-.index .content p{
-    padding: 1rem 0;
-    font-size: 1.6rem;
-    color: #222;
-    line-height: 2;
-}
-
-.index .content .btn{
-    color:black;
-}
-
-/* end */
 
 /* banner */
 
@@ -431,42 +396,42 @@ section{
  
 /* end */
 
-/* about us */
+/* index us */
 
-.about{
+.index{
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     gap: 4rem;
 }
 
-.about .image{
+.index .image{
     flex: 1 1 40rem;
 }
 
-.about .image img{
+.index .image img{
     width: 100%;
 }
 
-.about .content{
+.index .content{
     flex: 1 1 40rem;
 }
 
-.about .content h3{
+.index .content h3{
     font-size: 4.5rem;
     color: var(--color);
     font-family: 'Merienda One', cursive;
     padding-bottom: 1rem;
 }
 
-.about .content p{
+.index .content p{
     padding: 1rem 0;
     line-height: 2;
     font-size: 1.5rem;
     color: #666;
 }
 
-/* about us end */
+/* index us end */
 
 /* coffee base */
 
@@ -515,15 +480,15 @@ section{
 
 /* end */
 
-/* review */
+/* story */
 
-.review .box-container{
+.story .box-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     gap: 1.5rem;
 }
 
-.review .box-container .box{
+.story .box-container .box{
     border: .1rem solid rgba(0,0,0,.2);
     border-radius: .5rem;
     box-shadow: var(--box-shadow);
@@ -531,41 +496,41 @@ section{
     padding: 3rem 2rem;
 }
 
-.review .box-container .box .image{
+.story .box-container .box .image{
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 2rem;
 }
 
-.review .box-container .box .image .user{
+.story .box-container .box .image .user{
     height: 9rem;
     width: 9rem;
     border-radius: 50%;
     object-fit: cover;
 }
 
-.review .box-container .box h3{
+.story .box-container .box h3{
     padding: 1rem 0;
     font-size: 2rem;
     color: var(--color);
 }
 
-.review .box-container .box h4{
+.story .box-container .box h4{
     font-size: 1.4rem;
     color: #222;
 }
 
-.review .box-container .box .stars{
+.story .box-container .box .stars{
     margin-top: 1.2rem;
 }
 
-.review .box-container .box .stars i{
+.story .box-container .box .stars i{
     font-size: 1.5rem;
     color: gold;
 }
 
-.review .box-container .box p{
+.story .box-container .box p{
     font-size: 1.5rem;
     line-height: 1.8;
     color: #666;
