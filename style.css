@@ -313,87 +313,72 @@ section{
 
 /* end */
 
-/* index */
-
-
-
 /* banner */
-
-.banner-container{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
-    gap: 1.5rem;
+.banner-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+    overflow: hidden; /* Ensure content doesn't overflow on smaller screens */
 }
 
-.banner-container .banner{
-    position: relative;
-    height: 25rem;
-    overflow: hidden;
-    border-radius: .5rem;
-    border: 0.4rem hsl(60, 81%, 66%);
-    background-color: yellow;
+.banner {
+    text-align: center;
+    background-color: #f5f5f5;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 90%; /* Adjust maximum width for smaller screens */
 }
 
-.banner-container .banner img{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
+.banner h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
 }
 
-.banner-container .banner:hover img{
-    transform: scale(1.1);
-}
-
-.banner-container .banner .content{
-    position: absolute;
-    top: 50%;
-    left: 2rem;
-    transform: translateY(-50%);
-}
-
-.banner-container .banner .content span{
-    font-size: 1.5rem;
-    color:#666;
-}
-
-.banner-container .banner .content h3{
-    color: #222;
-    padding-top: .5rem;
-    font-size: 2rem;
+.banner p {
+    font-size: 1.6rem;
+    margin-bottom: 1.5rem;
 }
 
 /* end */
 
 /* offer */
 
-.offer .box-container{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-    gap: 1.5rem;
-    align-items: flex-start;
+.offer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 3rem;
+    gap: 2rem;
+    overflow: hidden; /* Ensure content doesn't overflow on smaller screens */
 }
 
-.offer .box-container .box{
+.offer-item {
     text-align: center;
+    background-color: #f5f5f5;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 90%; /* Adjust maximum width for smaller screens */
 }
 
-.offer .box-container .box img{
-    height: 10rem;
-    margin-bottom: .5rem;
+.offer-item img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
 }
 
-.offer .box-container .box h3{
+.offer-item h3 {
     font-size: 2rem;
-    color: var(--color);
-    margin: 1rem 0;
+    margin-bottom: 1rem;
 }
 
-.offer .box-container .box p{
-    line-height: 2;
-    font-size: 1.5rem;
-    color: #666;
+.offer-item p {
+    font-size: 1.6rem;
+    margin-bottom: 1.5rem;
 }
- 
 /* end */
 
 /* index us */
@@ -606,81 +591,65 @@ section{
 
 /* footer */
 
-.footer{
-    padding: 3rem 7%;
-    color: #fff8f2;
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 4rem 0;
+    overflow: hidden; /* Ensure content doesn't overflow on smaller screens */
 }
 
-.footer .box-container{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-    gap: 1.5rem;
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    overflow: hidden; /* Ensure content doesn't overflow on smaller screens */
 }
 
-.footer .box-container .box h3{
-    font-size: 2.2rem;
-    color: #222;
-    padding: 1rem 0;
+.footer-section {
+    width: 90%; /* Adjust width for smaller screens */
+    padding: 0 2rem;
+    margin-bottom: 2rem; /* Add margin between sections for better spacing on smaller screens */
 }
 
-.footer .box-container .box h3 i{
-    color: var(--color);
-}
-
-.footer .box-container .box a{
-    font-size: 1.4rem;
-    color: var(--color);
-    padding: 1rem 0;
-    display: block;
-}
-
-.footer .box-container .box a:hover{
-    text-decoration: underline;
-}
-
-.footer .box-container .box a i{
-    padding-right: .5rem;
-}
-
-.footer .box-container .box form input[type="email"]{
-    width: 100%;
-    padding: 1rem 1.2rem;
-    font-size: 1.6rem;
-    color: #222;
-    margin: 1rem 0;
-    border: .1rem solid var(--color);
-    border-radius: .5rem;
-    text-transform: none;
-}
-
-.footer .box-container .box form .btn{
-    background: none;
-}
-
-.footer .box-container .box form .btn:hover{
-    background: var(--color);
-}
-
-.footer .box-container .box .payment{
-    width: 100%;
-    margin-top: 2rem;
-}
-
-.footer .credit{
-    text-align: center;
-    color: #222;
-    margin-top: 1rem;
-    padding: 1rem;
+.footer-section h3 {
     font-size: 2rem;
-    padding-top: 2.5rem;
-    border-top: .2rem solid rgba(0,0,0,.1);
+    margin-bottom: 1.5rem;
 }
 
-.footer .credit span{
-    color: var(--color);
+.footer-section p {
+    font-size: 1.6rem;
+    margin-bottom: 1.5rem;
 }
 
-/* end */
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 1rem;
+}
+
+.footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.6rem;
+}
+
+.footer-section ul li a:hover {
+    color: #ffcc00;
+}
+
+.contact-form textarea {
+    height: 120px;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 1.4rem;
+}
 
 
 
@@ -701,7 +670,7 @@ section{
     section{
         padding: 3rem;
     }
-
+    
 }
 
 @media (max-width:768px){
