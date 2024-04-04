@@ -679,9 +679,7 @@ section{
     #menu-btn{
         display: inline-block;
     }
-     html{
-        overflow-x: hidden;
-
+     
     .header .navbar{
         position: absolute;
         top: 110%; right: -110%;
