@@ -661,6 +661,7 @@ section{
 
     html{
         font-size: 55%;
+        overflow-x: hidden;
     }
 
     .header{
@@ -678,6 +679,8 @@ section{
     #menu-btn{
         display: inline-block;
     }
+     html{
+        overflow-x: hidden;
 
     .header .navbar{
         position: absolute;
@@ -713,6 +716,7 @@ section{
 @media (max-width:450px){
     html{
         font-size: 50%;
+        overflow-x: hidden;
     }
 }
 /* Banner Section */
