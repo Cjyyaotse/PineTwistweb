@@ -661,7 +661,7 @@ section{
 
     html{
         font-size: 55%;
-      
+        overflow-x: hidden
     }
 
     .header{
@@ -675,7 +675,10 @@ section{
 }
 
 @media (max-width:768px){
-
+      html{
+        font-size: 55%;
+        overflow-x: hidden
+      }
     #menu-btn{
         display: inline-block;
     }
@@ -714,6 +717,7 @@ section{
 @media (max-width:450px){
     html{
         font-size: 50%;
+        overflow-x:hidden;
       
     }
 }
