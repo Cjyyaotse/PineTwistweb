@@ -657,77 +657,71 @@ section{
 
 /* media query*/
 
-@media (max-width:991px){
+@media (max-width: 991px) {
+  html {
+    font-size: 55%;
+    overflow-x: hidden;
+  }
 
-    html{
-        font-size: 55%;
-        overflow-x: hidden
-    }
+  .header {
+    padding: 2rem;
+  }
 
-    .header{
-        padding: 2rem;
-    }
-
-    section{
-        padding: 3rem;
-    }
-    
+  section {
+    padding: 3rem;
+  }
 }
 
-@media (max-width:768px){
-      html{
-        font-size: 55%;
-        overflow-x: hidden
-      }
-    #menu-btn{
-        display: inline-block;
-    }
-     
-    .header .navbar{
-        position: absolute;
-        top: 110%; right: -110%;
-        width: 30rem;
-        box-shadow: var(--box-shadow);
-        background: #fff;
-        border-radius: .5rem;
-    }
+@media (max-width: 768px) {
+  html {
+    font-size: 55%;
+    overflow-x: hidden;
+  }
 
-    .header .navbar.active{
-        right: 2rem;
-        transition: .4s linear;
-    }
+  .header {
+    padding: 1rem;
+  }
 
-    .header .navbar a{
-        font-size: 2rem;
-        margin: 2rem 2.5rem;
-        display: block;
-    }
+  .header .navbar {
+    position: static; /* Change position to static for mobile devices */
+    width: 100%; /* Occupy full width */
+    box-shadow: none; /* Remove box-shadow */
+    background: none; /* Remove background */
+    border-radius: 0; /* Remove border-radius */
+    display: none; /* Initially hide the navbar */
+  }
 
-    .index{
-        background-position: left;
-        justify-content: center;
-    }
+  .header .navbar.active {
+    display: block; /* Show the navbar when active */
+  }
 
-    .index .content h3{
-        font-size: 3rem;
-    }
+  .header .navbar a {
+    font-size: 1.5rem; /* Decrease font size */
+    margin: 1rem 0; /* Adjust margin */
+    display: block;
+  }
 
-}
-
-/*
-    @media (max-width:450px){
-    html{
-    font-size: 50%;
-    overflow-x:hidden;
-    
-    }
-    }
-    @media (max-width: 768px) {
-    .header .btn {
+  .header .btn {
     display: block;
     margin: 1rem auto;
-    }
-*/
+  }
+
+  .index {
+    background-position: center; /* Center background position */
+    text-align: center; /* Center align content */
+  }
+
+  .index .content h3 {
+    font-size: 2rem; /* Decrease font size */
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 50%; /* Decrease font size */
+  }
+}
+
 /* Banner Section */
 .banner-container {
     display: flex;
