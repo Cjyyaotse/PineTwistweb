@@ -26,9 +26,10 @@ document.querySelector('#menu-btn').onclick = () =>{
     cart.classList.remove('active');
 }
 
-window.onscroll = () =>{
+/*window.onscroll = () =>{
     navbar.classList.remove('active');
     login.classList.remove('active');
     search.classList.remove('active');
     cart.classList.remove('active');
 }
+*/
