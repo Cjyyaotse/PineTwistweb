@@ -719,6 +719,8 @@ section{
 @media (max-width: 450px) {
   html {
     font-size: 50%; /* Decrease font size */
+    width:100%;
+    overflow: hidden;
   }
 }
 
