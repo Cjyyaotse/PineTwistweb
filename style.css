@@ -714,18 +714,20 @@ section{
 
 }
 
-@media (max-width:450px){
+/*
+    @media (max-width:450px){
     html{
-        font-size: 50%;
-        overflow-x:hidden;
-      
+    font-size: 50%;
+    overflow-x:hidden;
+    
     }
-}
-@media (max-width: 768px) {
+    }
+    @media (max-width: 768px) {
     .header .btn {
-        display: block;
-        margin: 1rem auto;
+    display: block;
+    margin: 1rem auto;
     }
+*/
 /* Banner Section */
 .banner-container {
     display: flex;
